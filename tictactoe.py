@@ -12,6 +12,16 @@ def printBoard(xState, zState):
     seven = 'X' if xState[7] else ('O' if zState[7] else 7)
     eight = 'X' if xState[8] else ('O' if zState[8] else 8)
 
+    """Literal String Interpolation or F-strings: 
+    The idea behind f-strings is to make string interpolation simpler.
+    F-strings provide a concise and convenient way to embed python 
+    expressions inside string literals for formatting.
+
+    References:
+    https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/
+    https://peps.python.org/pep-0498/
+    """
+
     print(f"{zero} | {one} | {two} ")
     print(f"---|---|---")
     print(f"{three} | {four} | {five} ")
