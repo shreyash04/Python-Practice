@@ -42,18 +42,19 @@ def checkWin(xState, zState):
 if __name__ == "__main__":
     xState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
     zState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
-    turn = 1 # 1 for X and 0 for O
+    turn = 1 # turn is 1 for X and 0 for O
     print("Welcome to Tic Tac Toe")
     while(True):
         printBoard(xState, zState)
         if(turn == 1):
             print("X's Chance")
             value = int(input("Please enter a value: "))
-            xState[value] = 1
+            # Value is an integer for indexing in the array
+            xState[value] = 1 # Change 0 -> 1 in the array
         else:
             print("O's Chance")
             value = int(input("Please enter a value: "))
-            zState[value] = 1
+            zState[value] = 1 # Change 0 -> 1 in the array
         cwin = checkWin(xState, zState)
         if(cwin != -1):
             print("Match over")
