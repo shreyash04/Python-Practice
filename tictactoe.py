@@ -9,6 +9,9 @@ def printBoard(xState, zState):
     true or false. It simply allows testing a condition in a single line 
     replacing the multiline if-else making the code compact.
     Python Syntax : [on_true] if [expression] else [on_false] 
+    
+    References:
+    https://www.geeksforgeeks.org/ternary-operator-in-python/
     """
 
     zero = 'X' if xState[0] else ('O' if zState[0] else 0)
@@ -32,9 +35,9 @@ def printBoard(xState, zState):
     """
 
     print(f"{zero} | {one} | {two} ")
-    print(f"---|---|---")
+    print(f"--|---|--")
     print(f"{three} | {four} | {five} ")
-    print(f"---|---|---")
+    print(f"--|---|--")
     print(f"{six} | {seven} | {eight} ") 
 
 def checkWin(xState, zState):
@@ -68,7 +71,6 @@ if __name__ == "__main__":
         if(cwin != -1):
             print("Match over")
             break
-        
         turn = 1 - turn
 
 
