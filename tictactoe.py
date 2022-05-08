@@ -2,6 +2,15 @@ def sum(a, b, c):
     return a + b + c
 
 def printBoard(xState, zState):
+
+    """
+    Ternary operators are also known as conditional expressions. 
+    They are operators that evaluate something based on a condition being 
+    true or false. It simply allows testing a condition in a single line 
+    replacing the multiline if-else making the code compact.
+    Python Syntax : [on_true] if [expression] else [on_false] 
+    """
+
     zero = 'X' if xState[0] else ('O' if zState[0] else 0)
     one = 'X' if xState[1] else ('O' if zState[1] else 1)
     two = 'X' if xState[2] else ('O' if zState[2] else 2)
